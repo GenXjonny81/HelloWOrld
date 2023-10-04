@@ -1,0 +1,21 @@
+fun main() {
+    println("Hello, world! I have ${numberOfFingers()} fingers!")
+    println("I also have ${numberOfToes()} toes!")
+    println("I have ${numberOfFingers()} fingers and ${numberOfToes()} toes!")
+}
+//number of fingers//
+fun numberOfFingers(): Int {
+    val numberOfHands = 2
+    val fingersPerHand = 5
+    var fingersMissing = 0 
+    var handsMissing = 0
+    return(numberOfHands * fingersPerHand - fingersMissing - (handsMissing * 5))
+}
+//number of toes//
+fun numberOfToes(): Int {
+    val numberOfFeet = 2
+    val toesPerFoot = 5
+    var toesMissing = 0
+    var feetMissing = 0
+    return(numberOfFeet * toesPerFoot - toesMissing - (feetMissing * 5))
+}
